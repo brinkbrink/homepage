@@ -2,6 +2,11 @@
     background-color: #E9D758;
     /* color: #297373ff; */
     color: #E6E6E6;
+    margin: 0;
+}
+
+body {
+    width: 100%;
 }
 
 main {
@@ -10,8 +15,8 @@ main {
 }
 
 .bubble {
-    background-color: #E9D758;
-    border-radius: 24px;
+    /* background-color: #297373;
+    border-radius: 24px; */
     width: 25em;
     height: 10em;
     display: flex;
@@ -30,16 +35,43 @@ main {
     overflow: scroll;
 }
 
-li {
+.lilbble {
+    /* background-color: #297373;
+    border-radius: 24px; */
+    width: 25em;
+    height: 10em;
     display: flex;
-    justify-content: right;
-    align-items: end;
+}
+
+.lilbble p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25em;
+    background-color: #297373;
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+    margin: auto;
+    overflow: scroll;
 }
 
 a {
     color:#39393A;
     font-family: Palatino, URW Palladio L, serif;
     font-size: 3.5em;
+    padding: 0em 0.2em 0em 0.2em;
+}
+
+li {
+    display: flex;
+    justify-content: right;
+    align-items: end;
+}
+
+h2 {
+    padding-left: .2em;
+    margin-bottom: 2em;
 }
 
 a:hover {
@@ -48,6 +80,12 @@ a:hover {
 
 .color {
     color: #000;
+}
+
+footer {
+    width: 100%;
+    background-color: #297373;
+    margin-top: 2em;
 }
 
 footer p {
