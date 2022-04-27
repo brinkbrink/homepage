@@ -112,6 +112,8 @@ h2 a {
 
 a:hover {
     color: #297373;
+    text-decoration: overline underline;
+
 }
 
 .color {
