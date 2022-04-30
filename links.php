@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>nav </title>
-<link rel="stylesheet" href="css/links.css" />
-</head>
-<body>
-    <div class="grid-container">
-    <header>
-        <h2><a href="/index.html">E. Brink</a></h2>
-    </header>
-    <div class="bbbble"><p> links links links links links &darr;&darr;&darr;&darr;&darr; &darr; &darr; &darr; &darr; &darr;links links links links links links links links links links &darr;&darr;&darr;&darr;&darr; &darr; &darr; &darr; &darr; &darr;</p></div>
-    <div class="lilbble"> <p>nav  nav nav nav nav nav nav nav nav nav nav nav nav nav nav nav nav &darr;&darr;&darr;&darr;&darr; &darr; &darr; &darr; &darr; &darr;nav nav nav nav nav nav nav nav nav nav &darr;&darr;&darr;&darr;&darr; &darr; &darr; &darr; &darr; &darr;nav nav nav nav nav nav nav nav nav nav &darr;&darr;&darr;&darr;&darr; &darr; &darr; &darr; &darr; &darr;</p></div>
-        <nav>
-            <ul>
-            <li><a href="/web-folio.html">web portfolio</a></li>
-            <li><a href="/photography.html">photo portfolio</a></li>
-            <li><a href="/misc-media.html">misc media</a></li>
-            <li><a href="/writing/">writings about</a></li>
-            <li><a href="/links.html">links of interest</a></li>
-        </ul></nav>
+<?php
+include('includes/header.php');?>
         <div class="links">
             <ul>
                 <li><a href="#third">category</a></li>
