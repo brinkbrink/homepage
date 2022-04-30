@@ -14,6 +14,7 @@ nav {
 }
 
 .text { 
+    font-size: 1.1em;
     grid-area: main; 
     height: 28em;
     overflow: scroll;
@@ -111,6 +112,15 @@ a:hover {
 .caption {
     font-size: .8em;
     font-style: italic;
+}
+
+.sources {
+    font-size: .9em;
+    font-style: italic;
+}
+
+.text a {
+    font-size: 1.1em;
 }
 
 footer {
