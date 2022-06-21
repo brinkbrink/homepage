@@ -1,18 +1,26 @@
 * {
-    background-color: #efe490;
+    /* background-color: #efe490; */
+    /* background: linear-gradient(to right, #E9D758 ,#FF8552, #FF8552); */
     /* color: #297373ff; */
     color: #E6E6E6;
     margin: 0;
 }
 
 body {
+    background: linear-gradient(to right, #E9D758 ,#FF8552, #FF8552);
     width: 100%;
     height: 100%;
 }
 
 main {
-    height: 50vh;
-    display: flex;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "main main main  nav"
+    "main main main  nav"
+    "main main main  nav";
 }
 
 .portfolio {
@@ -25,9 +33,7 @@ main {
 .bubble {
     /* background-color: #297373;
     border-radius: 24px; */
-    width: 50 vw;
-    height: 40vw;
-    display: flex;
+    grid-area: main;
 }
 
 .bubble p {
@@ -35,38 +41,35 @@ main {
     text-justify: inter-word;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.25em;
-    background: linear-gradient(to right, #E9D758 ,#FF8552, #FF8552);
+    background: linear-gradient(to left, #E9D758 ,#FF8552, #FF8552);
     border-radius: 50%;
-    width: 50vw;
-    height: 50vw;
+    width: 80vh;
+    height: 80vh;
     margin: auto;
-    margin-left: 10vw;
-    margin-right: 10vw;
     overflow: scroll;
+    position: relative;
+    width: 60%;
+    height: 0;
+    padding-bottom: 60%;
 }
 
-.lilbble {
-    /* background-color: #297373;
-    border-radius: 24px; */
-    width: 25em;
-    height: 10em;
-    display: flex;
-}
-
-.lilbble p {
+nav button {
     text-align: justify;
     text-justify: inter-word;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.25em;
-    background: linear-gradient(#297373, #E9D758);
+    background: linear-gradient(#E9D758,#297373);
     /* background: #297373; */
     border-radius: 50%;
-    width: 10em;
-    height: 10em;
-    margin: auto;
-    margin-left: 10vw;
-    margin-top: 8vh;
+    width: 20vh;
+    height: 20vh;
     overflow: scroll;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+nav button:hover {
+    background: linear-gradient(#297373,#E9D758);
 }
 
 .bubbolio {
@@ -83,7 +86,7 @@ main {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.25em;
     /* background-color: #FF8552; */
-    background: linear-gradient(to right, #E9D758 , #FF8552);
+    background: linear-gradient(to left, #E9D758 , #FF8552);
     border-radius: 50%;
     width: 10em;
     height: 10em;
@@ -91,27 +94,48 @@ main {
     overflow: scroll;
 }
 
+ul {
+    list-style: none;
+    margin-top: 5vh;
+}
+
 a {
     color:#39393A;
     font-family: Palatino, URW Palladio L, serif;
-    font-size: 3.5em;
-    padding: 0em 0.2em 0em 0.2em;
+    font-size: 4vh;
     text-decoration-color: #297373;
 }
 
-li {
-    display: flex;
+li a {
+    /* display: flex;
     justify-content: right;
-    align-items: end;
+    align-items: end; */
+    display: block;
+    font-size: 3vh;
+    color: #fff;
+    background: #297373;
+    border-radius: 50%;
+    height: 15vh;
+    width: 15vh;
+    text-align: center;
+    line-height: 15vh;
+    margin: 1vh;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    margin-bottom: 1em;
+nav {
+    grid-area: nav;
+    margin-top: -3vh;
+}
+
+#nav {
+    display: none;
 }
 
 h2 a {
     padding-left: .2em;
     text-decoration-style: wavy;
+    font-size: 8vh;
 }
 
 a:hover {
@@ -121,6 +145,11 @@ a:hover {
     text-decoration-color: #FF8552; */
 }
 
+li a:hover {
+    background: #E9D758;
+    text-decoration: none;
+}
+
 .color {
     color: #000;
 }
@@ -128,7 +157,7 @@ a:hover {
 footer {
     width: 100%;
     background-color: #297373;
-    margin-top: 2em;
+    margin-top: 20vh;
 }
 
 footer p {
@@ -141,8 +170,5 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
-    a {
-        font-size: 1.8em;
-        padding: 2em 0.5em 2em 0.5em;    
-    }
+
   }

@@ -1,11 +1,28 @@
 * {
-    background-color: #E9D758;
     /* color: #297373ff; */
     color: #39393A;
     /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-family: 'Caudex', serif;
     box-sizing: border-box;
     margin: 0;
+}
+
+html {
+    background: linear-gradient(to right, #fff49f ,#E9D758, #FF8552);
+    width: 100%;
+}
+
+.construction {
+    width: 90vw;
+    border: 10px dashed #000;
+    text-align: center;
+    height: 70vh;
+    line-height: 70vh;
+    margin: auto;
+}
+
+.construction h1 {
+    font-size: 10vh;
 }
 
 img {
@@ -27,50 +44,42 @@ header {
     padding-bottom: 2vh;
 }
 
-nav { 
-    grid-area: menu; 
-}
-
 .text { 
     grid-area: main; 
-    height: 73vh;
+    height: 75vh;
     overflow: scroll;
     text-align: justify;
     text-justify: inter-character;
     margin: 2vw;
 }
 
-.lilbble {
-    /* background-color: #297373;
-    border-radius: 24px; */
-    width: 25em;
-    height: 10em;
-    display: inline;
-    grid-area: bubble;
-}
+
 
 .bbbble {
     width: 10em;
     height: 5em;
-    grid-area: bbbble;
+    grid-area: bubble;
 }
 
 .links {
     grid-area: links;
     font-size: .5em;
-    height: 75vh;
+    height: 77vh;
     overflow: scroll;
+    display: flex;
 }
 
 .grid-container {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr .5fr .75fr;
+  grid-template-rows: auto;
   grid-template-areas:
-    'header header header header bbbble bubble'
-    'main main main main links bubble'
-    'main main main main links bubble'
-    'main main main main links bubble'
-    'main main main main links bubble'
-    'main main main main links menu';
+    'header header header header header'
+    'main main main links nav'
+    'main main main links nav'
+    'main main main links nav'
+    'main main main links nav'
+    'main main main links nav';
   gap: 10px;
   /* background-color: #2196F3; */
   padding: 10px;
@@ -91,43 +100,55 @@ a h3 {
 li {
     display: block;
     list-style-type: none;
-    text-align: justify;
-    text-align-last: justify;
-    text-justify: inter-character;
 }
 
 .links li a {
     background: #297373;
-    height: 6.5vh;
-    width: 6.5vh;
-    display: flex;
+    height: 10vh;
+    width: 10vh;
+    line-height: 10vh;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     border-radius: 50%;
-    margin: 6vh;
-}
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-nav li a {
-    background: #297373;
-    height: 20vh;
-    width: 20vh;
+    margin: 1vh;
+    text-align: center;
     font-size: 2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin: 6vh;
+}
+
+#nav {
+    display: none;
+}
+
+nav ul {
+    margin-top: 5vh;
 }
 
 .links li a:hover {
     background: #FF8552;
 }
 
+li a {
+    /* display: flex;
+    justify-content: right;
+    align-items: end; */
+    display: block;
+    font-size: 3vh;
+    color: #fff;
+    background: #297373;
+    border-radius: 50%;
+    height: 15vh;
+    width: 15vh;
+    text-align: center;
+    line-height: 15vh;
+    margin: 1vh;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+li a:hover {
+    background: #E9D758;
+    text-decoration: none;
+}
 
 h2 a {
     padding-left: .2em;
@@ -190,6 +211,31 @@ button:hover {
     border-top: dashed #297373 10px;
 }
 
+nav button {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25em;
+    background: linear-gradient(#E9D758,#297373);
+    /* background: #297373; */
+    border-radius: 50%;
+    width: 20vh;
+    height: 20vh;
+    overflow: scroll;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+nav button:hover {
+    cursor: pointer;
+    background: linear-gradient(#297373,#E9D758);
+    text-decoration: none;
+}
+
+nav {
+    grid-area: nav;
+    margin-top: -9vh;
+}
 
 .caption {
     font-size: .8em;
@@ -214,6 +260,8 @@ footer p {
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     a {
