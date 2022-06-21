@@ -11,8 +11,6 @@
       <header>
         <h2><a href="/index.html">E. Brink</a></h2>
         </header>
-        <div class="bbbble"><p>Hi! My last name is Brink and my first initial is E. I'm here to help you enjoy the internet. The Internet. The internet. The internet. <span class="color">Hi!</span> My last name is Brink and my first initial is E. I'm<span class="color"> here to help</span> you enjoy the internet. The Internet. The internet. The internet. Hi! My last <span class="color">name is Brink</span> and my first initial is E. I'm here to help you enjoy the internet. The Internet. The internet. The internet. Hi! My last name is Brink and my first initial is E. <span class="color">I'm here to help</span> you enjoy the internet. The Internet. <span class="color">The internet.</span>  The internet. Hi! My last name is Brink and my first initial is E. I'm here to help you enjoy the internet. The Internet. The internet. The internet. Hi! My last name is Brink and my first initial is E. I'm here to help you enjoy the internet. The Internet. The internet. The internet. Hi! My last name is Brink and my first initial is E. I'm here to help you enjoy the internet. The <span class="color">Internet. The internet. The internet. Hi! My last name is Brink and my first initial is E. I'm here to help you enjoy the internet. The Internet. The internet. The internet. Hi! My last name is Brink and my first initial is E. I'm here to help you enjoy the internet. The Internet. The internet. The internet. Hi! My last name is Brink and my first initial is E. I'm here to help you enjoy the internet. The Internet. The internet. The i</span></p></div>
-        <div class="lilbble"> <p>nav  nav nav nav nav nav nav nav nav nav nav nav nav nav nav nav nav &darr;&darr;&darr;&darr;&darr; &darr; &darr; &darr; &darr; &darr;nav nav nav nav nav nav nav nav nav nav &darr;&darr;&darr;&darr;&darr; &darr; &darr; &darr; &darr; &darr;nav nav nav nav nav nav nav nav nav nav &darr;&darr;&darr;&darr;&darr; &darr; &darr; &darr; &darr; &darr;</p>  </div>
   <nav-comp></nav-comp>
   <div class="links">
       <ul>
@@ -26,25 +24,25 @@
   </div>
   <div class="text">
 
-      <a id="first" href="tigre.html"><h3>ONE</h3></a>
+      <a id="first" href="tigre.html"></a><h3>ONE</h3>
       
       <button onclick="openWin()"><img src="/images/tigre.jpeg">
       </button>
 
-      <a id="second"><h3>TWO</h3></a>
+      <a id="second"></a><h3>TWO</h3>
       
       <button onclick="openWin()"><img src="/images/tigre.jpeg"></button>
 
-      <a id="third"><h3>THREE</h3></a>
+      <a id="third"></a><h3>THREE</h3>
       <button onclick="openWin()"><img src="/images/tigre.jpeg"></button>
 
-      <a id="fourth"><h3>FOUR</h3></a>
+      <a id="fourth"></a><h3>FOUR</h3>
       <button onclick="openWin()"><img src="/images/tigre.jpeg"></button>
 
-      <a id="fifth"><h3>FIVE</h3></a>
+      <a id="fifth"></a><h3>FIVE</h3>
       <button onclick="openWin()"><img src="/images/tigre.jpeg"></button>
 
-      <a id="sixth"><h3>SIX</h3></a>
+      <a id="sixth"></a><h3>SIX</h3>
       <button onclick="openWin()"><img src="/images/tigre.jpeg"></button>
             
         </div>
@@ -59,6 +57,16 @@
     myWindow = window.open("tigre.html", "", "width=815, height=550");
   }
   </script>
+  <script>
+    function switchNav() {
+        let navEl = document.getElementById("nav");
+        if (navEl.style.display == "block") {
+          navEl.style.display = "none";
+        } else {
+          navEl.style.display = "block";
+        }
+    }
+    </script>
 </body>
 
 </html>
