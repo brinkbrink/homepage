@@ -38,3 +38,12 @@ class Footer extends HTMLElement {
 
 
 customElements.define("footer-comp", Footer);
+
+function switchNav() {
+    let navEl = document.getElementById("nav");
+    if (navEl.style.display == "block") {
+      navEl.style.display = "none";
+    } else {
+      navEl.style.display = "block";
+    }
+}
