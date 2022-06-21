@@ -7,12 +7,10 @@
 <script src="/includes/nav.js"></script>
 </head>
 <body>
-    <div class="grid-container">
     <header>
         <h2><a href="/index.html">E. Brink</a></h2>
     </header>
-    <div class="bbbble"><p>Hi! My last name is Brink and my first initial is E. I'm here to help you enjoy the internet. The Internet. The internet. The internet. <span class="color">Hi!</span> My last name is Brink and my first initial is E. I'm<span class="color"> here to help</span> you enjoy the internet. The Internet. The internet. The internet. Hi! My last <span class="color">name is Brink</span> and my first initial is E. I'm here to help you enjoy the internet. The Internet. The internet. The internet. Hi! My last name is Brink and my first initial is E. <span class="color">I'm here to help</span> you enjoy the internet. The Internet. <span class="color">The internet.</span>  The internet. Hi! My last name is Brink and my first initial is E. I'm here to help you enjoy the internet. The Internet. The internet. The internet. Hi! My last name is Brink and my first initial is E. I'm here to help you enjoy the internet. The Internet. The internet. The internet. Hi! My last name is Brink and my first initial is E. I'm here to help you enjoy the internet. The <span class="color">Internet. The internet. The internet. Hi! My last name is Brink and my first initial is E. I'm here to help you enjoy the internet. The Internet. The internet. The internet. Hi! My last name is Brink and my first initial is E. I'm here to help you enjoy the internet. The Internet. The internet. The internet. Hi! My last name is Brink and my first initial is E. I'm here to help you enjoy the internet. The Internet. The internet. The i</span></p></div>
-    <div class="lilbble"> <p>nav  nav nav nav nav nav nav nav nav nav nav nav nav nav nav nav nav &darr;&darr;&darr;&darr;&darr; &darr; &darr; &darr; &darr; &darr;nav nav nav nav nav nav nav nav nav nav &darr;&darr;&darr;&darr;&darr; &darr; &darr; &darr; &darr; &darr;nav nav nav nav nav nav nav nav nav nav &darr;&darr;&darr;&darr;&darr; &darr; &darr; &darr; &darr; &darr;</p>  </div>
+    <div class="grid-container">
     <nav-comp></nav-comp>
         <div class="text">
             <h3>Restaurant Industry Research</h3>
@@ -39,5 +37,14 @@
 
     <footer-comp></footer-comp>
 </body>
-
+<script>
+    function switchNav() {
+        let navEl = document.getElementById("nav");
+        if (navEl.style.display == "block") {
+          navEl.style.display = "none";
+        } else {
+          navEl.style.display = "block";
+        }
+    }
+</script>
 </html>
