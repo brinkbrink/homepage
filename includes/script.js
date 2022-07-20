@@ -1,3 +1,5 @@
+// for nav and footer components
+
 class Nav extends HTMLElement {
     constructor() {
         super();
@@ -39,6 +41,8 @@ class Footer extends HTMLElement {
 
 customElements.define("footer-comp", Footer);
 
+// for opening nav menu
+
 function switchNav() {
     let navEl = document.getElementById("nav");
     if (navEl.style.display == "block") {
@@ -46,4 +50,32 @@ function switchNav() {
     } else {
       navEl.style.display = "block";
     }
+}
+
+// for pop-up larger versions of photos
+
+let myWindow;
+  
+function openWin1() {
+  myWindow = window.open("1.html", "", "width=1220, height=893,left=20,top=20,toolbar=No,location=No,scrollbars=no,status=No,resizable=no,fullscreen=No");
+}
+
+function openWin2() {
+  myWindow = window.open("2.html", "", "width=1220, height=877");
+}
+
+function openWin3() {
+  myWindow = window.open("3.html", "", "width=1220, height=820");
+}
+
+function openWin4() {
+  myWindow = window.open("4.html", "", "width=1220, height=820");
+}
+
+function openWin5() {
+  myWindow = window.open("5.html", "", "width=1220, height=820");
+}
+
+function openWin6() {
+  myWindow = window.open("6.html", "", "width=1220, height=820");
 }
